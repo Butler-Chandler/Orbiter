@@ -1,8 +1,8 @@
-# H1
+# How to run
 To build the application navigate to the parent level directory and run a mvn clean install.
 After that builds run mvn spring-boot:run in the OrbiterBFF directory.
 
-# H2
+# Requirements
 This runs on Java 11
 Node v14.2.0
 Npm 6.14.4
