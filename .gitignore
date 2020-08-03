@@ -36,3 +36,5 @@ build/
 /Orbiter/node_modules/
 /Orbiter/node/
 /Orbiter/node_modules/
+/Orbiter/.editorconfig
+/Orbiter/git
