@@ -43,13 +43,5 @@
       </div>
     </mat-nav-list>
   </mat-sidenav>
-
-  <mat-sidenav-content class="example-sidenav-content">
-      <h1>{{planet.name}}</h1>
-      <div class="sun"></div>
-      <div planetAnimation [animate]="animatePlanet" [orbitSpeed]="orbitalSpeed+'s'">
-        <div planet [planetColor]="planet.color" [planetRadius]="planet.radius+'px'" [rotationSpeed]="rotationalSpeed" class="orbit"></div>
-      </div>
-
-  </mat-sidenav-content>
+  <app-celestial-orbit [orbitalSpeed]="orbitalSpeed" [rotationalSpeed]="rotationalSpeed" [animatePlanet]="animatePlanet" [planet]="planet"></app-celestial-orbit>
 </mat-sidenav-container>

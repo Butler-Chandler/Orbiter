@@ -11,8 +11,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { PlanetDirective } from './PlanetDirective.directive';
-import { PlanetAnimationDirective } from './AnimationDirective.directive';
+import { PlanetDirective } from './directives/PlanetDirective.directive';
+import { PlanetAnimationDirective } from './directives/AnimationDirective.directive';
+import { CelestialOrbitComponent } from './celestial-orbit/celestial-orbit.component';
+import { SideNavComponent } from './side-nav/side-nav.component';
+import { OrbitFormComponent } from './orbit-form/orbit-form.component';
 
 
 
@@ -20,7 +23,10 @@ import { PlanetAnimationDirective } from './AnimationDirective.directive';
   declarations: [
     AppComponent,
     PlanetDirective,
-    PlanetAnimationDirective
+    PlanetAnimationDirective,
+    CelestialOrbitComponent,
+    SideNavComponent,
+    OrbitFormComponent
   ],
   imports: [
     BrowserModule,

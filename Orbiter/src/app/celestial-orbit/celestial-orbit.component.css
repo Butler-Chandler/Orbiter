@@ -1,0 +1,30 @@
+.sun{
+  display:inline-block;
+  position: absolute;
+  background-color: yellow;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 10px solid orange;
+}
+
+.orbiter{
+  border-radius: 50%;
+  position:absolute;
+}
+
+.celestialOrbitSideContent {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+mat-sidenav-content {
+  margin-left: 0 !important;
+  flex: 1 1 auto;
+}
+
+mat-sidenav {
+  flex: 0 1 auto;
+}

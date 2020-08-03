@@ -1,7 +1,7 @@
 import { Component, ViewChild, OnInit } from '@angular/core';
 import { NgForm, Validators, FormGroup, FormBuilder } from '@angular/forms';
 import { MatSidenav } from '@angular/material/sidenav';
-import { PlanetService } from './planet.service';
+import { PlanetService } from './services/planet.service';
 
 @Component({
   selector: 'app-root',
@@ -24,7 +24,6 @@ export class AppComponent implements OnInit{
 
   ngOnInit(){
     this.getRandomPlanet();
-
     this.orbitForm = this.fb.group({
       orbitalSpeed: ['', Validators.min(0)],
       rotationalSpeed: ['', Validators.min(0)],

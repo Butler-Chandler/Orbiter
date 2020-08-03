@@ -6,12 +6,7 @@
   height: 88vh;
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
-.example-sidenav-content {
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-}
+
 .example-sidenav {
    user-select: none;
 }
@@ -34,21 +29,6 @@
 }
 .submenu.expanded {
   transform: scaleY(1);
-}
-
-.orbit{
-  border-radius: 50%;
-  position:absolute;
-}
-
-.sun{
-  display:inline-block;
-  position: absolute;
-  background-color: yellow;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  border: 10px solid orange;
 }
 
 @-webkit-keyframes orbit {
