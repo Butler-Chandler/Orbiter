@@ -3,13 +3,13 @@
   <h1>Indiggo</h1>
 </mat-toolbar>
 
-<mat-sidenav-container class="example-container" autosize>
-  <mat-sidenav #sidenav class="example-sidenav" mode="side" opened="true" (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">
+<mat-sidenav-container class="sidenav-container" autosize>
+  <mat-sidenav #sidenav class="sidenav" mode="side" opened="true" (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">
     <mat-nav-list>
-      <mat-list-item (click)="animatePlanet = !animatePlanet" class="parent">
+      <mat-list-item (click)="celestialOrbit.animatePlanet = !celestialOrbit.animatePlanet" class="parent">
         <span class="full-width" *ngIf="isExpanded || isShowing">Start/Stop Orbit</span>
-        <mat-icon mat-list-icon *ngIf="!animatePlanet">play_arrow</mat-icon>
-        <mat-icon mat-list-icon *ngIf="animatePlanet">pause</mat-icon>
+        <mat-icon mat-list-icon *ngIf="!celestialOrbit.animatePlanet">play_arrow</mat-icon>
+        <mat-icon mat-list-icon *ngIf="celestialOrbit.animatePlanet">pause</mat-icon>
       </mat-list-item>
       <mat-list-item (click)="getRandomPlanet()" class="parent">
         <span class="full-width" *ngIf="isExpanded || isShowing">Get new planet</span>
@@ -21,27 +21,9 @@
         <mat-icon class="menu-button" [ngClass]="{'rotated' : showSubmenu}" *ngIf="isExpanded || isShowing">expand_more</mat-icon>
       </mat-list-item>
       <div class="submenu" [ngClass]="{'expanded' : showSubmenu}" *ngIf="isShowing || isExpanded">
-        <form class="form" [formGroup]="orbitForm" (ngSubmit)="onSubmit()">
-          <div class="form-group">
-            <label>Orbital Period</label>
-            <input type="number" name="orbitalSpeed" class="form-control" min="0" formControlName="orbitalSpeed" >
-            <span class="text-danger" *ngIf="(orbitForm.controls.orbitalSpeed.touched || submitted) && orbitForm.controls.orbitalSpeed.errors?.min">
-              Must be positive
-            </span>
-          </div>
-          <div class="form-group">
-            <label>Rotational Period</label>
-            <input type="number" name="rotationalSpeed" class="form-control" min="0" formControlName="rotationalSpeed">
-            <span class="text-danger" *ngIf="(orbitForm.controls.rotationalSpeed.touched || submitted) && orbitForm.controls.rotationalSpeed.errors?.min">
-              Must be positive
-            </span>
-          </div>
-          <div class="form-group">
-            <input type="submit" name="Apply">
-          </div>
-        </form>
+        <orbit-form [celestialOrbit]="celestialOrbit"></orbit-form>
       </div>
     </mat-nav-list>
   </mat-sidenav>
-  <app-celestial-orbit [orbitalSpeed]="orbitalSpeed" [rotationalSpeed]="rotationalSpeed" [animatePlanet]="animatePlanet" [planet]="planet"></app-celestial-orbit>
+  <celestial-orbit-animation [orbitalSpeed]="celestialOrbit.orbitalSpeed" [rotationalSpeed]="celestialOrbit.rotationalSpeed" [animatePlanet]="celestialOrbit.animatePlanet" [planet]="celestialOrbit.planet"></celestial-orbit-animation>
 </mat-sidenav-container>

@@ -2,6 +2,7 @@ import { Component, ViewChild, OnInit } from '@angular/core';
 import { NgForm, Validators, FormGroup, FormBuilder } from '@angular/forms';
 import { MatSidenav } from '@angular/material/sidenav';
 import { PlanetService } from './services/planet.service';
+import { CelestialOrbit} from './domain/celestial-orbit.model';
 
 @Component({
   selector: 'app-root',
@@ -11,28 +12,20 @@ import { PlanetService } from './services/planet.service';
 export class AppComponent implements OnInit{
   @ViewChild('sidenav') sidenav: MatSidenav;
   title = 'Orbiter';
-  animatePlanet = true;
-  orbitalSpeed = 1;
-  rotationalSpeed = 1;
+  celestialOrbit: CelestialOrbit = new CelestialOrbit();
   isExpanded = true;
   isShowing = false;
   showSubmenu: boolean = false;
-  planet: any = {};
   orbitForm: FormGroup;
-  submitted = false;
-  constructor(private planetService: PlanetService, private fb: FormBuilder) { }
+  constructor(private planetService: PlanetService) { }
 
   ngOnInit(){
     this.getRandomPlanet();
-    this.orbitForm = this.fb.group({
-      orbitalSpeed: ['', Validators.min(0)],
-      rotationalSpeed: ['', Validators.min(0)],
-    },{});
   }
 
   getRandomPlanet(){
     this.planetService.getPlanet().subscribe(res => {
-      this.planet = res;
+      this.celestialOrbit.planet = res;
     });
   }
 
@@ -45,14 +38,6 @@ export class AppComponent implements OnInit{
   mouseleave() {
     if (!this.isExpanded) {
       this.isShowing = false;
-    }
-  }
-
-  onSubmit(){
-    this.submitted = true;
-    if(this.orbitForm.valid){
-      this.orbitalSpeed = this.orbitForm.value.orbitalSpeed;
-      this.rotationalSpeed = this.orbitForm.value.rotationalSpeed;
     }
   }
 }

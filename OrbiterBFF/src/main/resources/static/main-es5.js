@@ -134,9 +134,9 @@
       /* harmony import */
 
 
-      var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-      /*! @angular/forms */
-      "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
+      var _domain_celestial_orbit_model__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+      /*! ./domain/celestial-orbit.model */
+      "./src/app/domain/celestial-orbit.model.ts");
       /* harmony import */
 
 
@@ -191,6 +191,12 @@
       var _directives_PlanetDirective_directive__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
       /*! ./directives/PlanetDirective.directive */
       "./src/app/directives/PlanetDirective.directive.ts");
+      /* harmony import */
+
+
+      var _orbit_form_orbit_form_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+      /*! ./orbit-form/orbit-form.component */
+      "./src/app/orbit-form/orbit-form.component.ts");
 
       var _c0 = ["sidenav"];
 
@@ -266,26 +272,6 @@
         }
       }
 
-      function AppComponent_div_23_span_6_Template(rf, ctx) {
-        if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "span", 21);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Must be positive ");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        }
-      }
-
-      function AppComponent_div_23_span_11_Template(rf, ctx) {
-        if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "span", 21);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Must be positive ");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        }
-      }
-
       var _c2 = function _c2(a0) {
         return {
           "expanded": a0
@@ -294,55 +280,9 @@
 
       function AppComponent_div_23_Template(rf, ctx) {
         if (rf & 1) {
-          var _r11 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
-
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "form", 15);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngSubmit", function AppComponent_div_23_Template_form_ngSubmit_1_listener() {
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r11);
-
-            var ctx_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
-
-            return ctx_r10.onSubmit();
-          });
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 16);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "label");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Orbital Period");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "input", 17);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, AppComponent_div_23_span_6_Template, 2, 0, "span", 18);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 16);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "label");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "Rotational Period");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](10, "input", 19);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](11, AppComponent_div_23_span_11_Template, 2, 0, "span", 18);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "div", 16);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](13, "input", 20);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "orbit-form", 15);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         }
@@ -350,47 +290,30 @@
         if (rf & 2) {
           var ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](4, _c2, ctx_r7.showSubmenu));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](2, _c2, ctx_r7.showSubmenu));
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("formGroup", ctx_r7.orbitForm);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", (ctx_r7.orbitForm.controls.orbitalSpeed.touched || ctx_r7.submitted) && (ctx_r7.orbitForm.controls.orbitalSpeed.errors == null ? null : ctx_r7.orbitForm.controls.orbitalSpeed.errors.min));
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", (ctx_r7.orbitForm.controls.rotationalSpeed.touched || ctx_r7.submitted) && (ctx_r7.orbitForm.controls.rotationalSpeed.errors == null ? null : ctx_r7.orbitForm.controls.rotationalSpeed.errors.min));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("celestialOrbit", ctx_r7.celestialOrbit);
         }
       }
 
       var AppComponent = /*#__PURE__*/function () {
-        function AppComponent(planetService, fb) {
+        function AppComponent(planetService) {
           _classCallCheck(this, AppComponent);
 
           this.planetService = planetService;
-          this.fb = fb;
           this.title = 'Orbiter';
-          this.animatePlanet = true;
-          this.orbitalSpeed = 1;
-          this.rotationalSpeed = 1;
+          this.celestialOrbit = new _domain_celestial_orbit_model__WEBPACK_IMPORTED_MODULE_1__["CelestialOrbit"]();
           this.isExpanded = true;
           this.isShowing = false;
           this.showSubmenu = false;
-          this.planet = {};
-          this.submitted = false;
         }
 
         _createClass(AppComponent, [{
           key: "ngOnInit",
           value: function ngOnInit() {
             this.getRandomPlanet();
-            this.orbitForm = this.fb.group({
-              orbitalSpeed: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].min(0)],
-              rotationalSpeed: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].min(0)]
-            }, {});
           }
         }, {
           key: "getRandomPlanet",
@@ -398,7 +321,7 @@
             var _this = this;
 
             this.planetService.getPlanet().subscribe(function (res) {
-              _this.planet = res;
+              _this.celestialOrbit.planet = res;
             });
           }
         }, {
@@ -415,23 +338,13 @@
               this.isShowing = false;
             }
           }
-        }, {
-          key: "onSubmit",
-          value: function onSubmit() {
-            this.submitted = true;
-
-            if (this.orbitForm.valid) {
-              this.orbitalSpeed = this.orbitForm.value.orbitalSpeed;
-              this.rotationalSpeed = this.orbitForm.value.rotationalSpeed;
-            }
-          }
         }]);
 
         return AppComponent;
       }();
 
       AppComponent.ɵfac = function AppComponent_Factory(t) {
-        return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_planet_service__WEBPACK_IMPORTED_MODULE_2__["PlanetService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"]));
+        return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_planet_service__WEBPACK_IMPORTED_MODULE_2__["PlanetService"]));
       };
 
       AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
@@ -450,7 +363,7 @@
         },
         decls: 25,
         vars: 11,
-        consts: [["color", "primary", 1, "toolbar"], ["mat-icon-button", "", 3, "click"], ["autosize", "", 1, "example-container"], ["mode", "side", "opened", "true", 1, "example-sidenav", 3, "mouseenter", "mouseleave"], ["sidenav", ""], [1, "parent", 3, "click"], ["class", "full-width", 4, "ngIf"], ["mat-list-icon", "", 4, "ngIf"], ["mat-list-icon", ""], ["class", "menu-button", 3, "ngClass", 4, "ngIf"], ["class", "submenu", 3, "ngClass", 4, "ngIf"], [3, "orbitalSpeed", "rotationalSpeed", "animatePlanet", "planet"], [1, "full-width"], [1, "menu-button", 3, "ngClass"], [1, "submenu", 3, "ngClass"], [1, "form", 3, "formGroup", "ngSubmit"], [1, "form-group"], ["type", "number", "name", "orbitalSpeed", "min", "0", "formControlName", "orbitalSpeed", 1, "form-control"], ["class", "text-danger", 4, "ngIf"], ["type", "number", "name", "rotationalSpeed", "min", "0", "formControlName", "rotationalSpeed", 1, "form-control"], ["type", "submit", "name", "Apply"], [1, "text-danger"]],
+        consts: [["color", "primary", 1, "toolbar"], ["mat-icon-button", "", 3, "click"], ["autosize", "", 1, "example-container"], ["mode", "side", "opened", "true", 1, "example-sidenav", 3, "mouseenter", "mouseleave"], ["sidenav", ""], [1, "parent", 3, "click"], ["class", "full-width", 4, "ngIf"], ["mat-list-icon", "", 4, "ngIf"], ["mat-list-icon", ""], ["class", "menu-button", 3, "ngClass", 4, "ngIf"], ["class", "submenu", 3, "ngClass", 4, "ngIf"], [3, "orbitalSpeed", "rotationalSpeed", "animatePlanet", "planet"], [1, "full-width"], [1, "menu-button", 3, "ngClass"], [1, "submenu", 3, "ngClass"], [3, "celestialOrbit"]],
         template: function AppComponent_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-toolbar", 0);
@@ -492,7 +405,7 @@
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "mat-list-item", 5);
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AppComponent_Template_mat_list_item_click_10_listener() {
-              return ctx.animatePlanet = !ctx.animatePlanet;
+              return ctx.celestialOrbit.animatePlanet = !ctx.celestialOrbit.animatePlanet;
             });
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](11, AppComponent_span_11_Template, 2, 0, "span", 6);
@@ -537,13 +450,13 @@
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](23, AppComponent_div_23_Template, 14, 6, "div", 10);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](23, AppComponent_div_23_Template, 2, 4, "div", 10);
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](24, "app-celestial-orbit", 11);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](24, "celestial-orbit-animation", 11);
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
           }
@@ -555,11 +468,11 @@
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", !ctx.animatePlanet);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", !ctx.celestialOrbit.animatePlanet);
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.animatePlanet);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.celestialOrbit.animatePlanet);
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -579,11 +492,11 @@
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("orbitalSpeed", ctx.orbitalSpeed)("rotationalSpeed", ctx.rotationalSpeed)("animatePlanet", ctx.animatePlanet)("planet", ctx.planet);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("orbitalSpeed", ctx.celestialOrbit.orbitalSpeed)("rotationalSpeed", ctx.celestialOrbit.rotationalSpeed)("animatePlanet", ctx.celestialOrbit.animatePlanet)("planet", ctx.celestialOrbit.planet);
           }
         },
-        directives: [_angular_material_toolbar__WEBPACK_IMPORTED_MODULE_3__["MatToolbar"], _angular_material_button__WEBPACK_IMPORTED_MODULE_4__["MatButton"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_5__["MatIcon"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_6__["MatSidenavContainer"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_6__["MatSidenav"], _angular_material_list__WEBPACK_IMPORTED_MODULE_7__["MatNavList"], _angular_material_list__WEBPACK_IMPORTED_MODULE_7__["MatListItem"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgIf"], _angular_material_list__WEBPACK_IMPORTED_MODULE_7__["MatListIconCssMatStyler"], _celestial_orbit_celestial_orbit_component__WEBPACK_IMPORTED_MODULE_9__["CelestialOrbitComponent"], _directives_PlanetDirective_directive__WEBPACK_IMPORTED_MODULE_10__["PlanetDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgClass"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroupDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NumberValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControlName"]],
-        styles: [".mat-button-base[_ngcontent-%COMP%]{\r\n  margin: 8px 8px 8px 8px;\r\n}\r\n\r\n.example-container[_ngcontent-%COMP%] {\r\n  height: 88vh;\r\n  border: 1px solid rgba(0, 0, 0, 0.5);\r\n}\r\n\r\n.example-sidenav[_ngcontent-%COMP%] {\r\n   -webkit-user-select: none;\r\n      -moz-user-select: none;\r\n       -ms-user-select: none;\r\n           user-select: none;\r\n}\r\n\r\n.full-width[_ngcontent-%COMP%] {\r\n  width: 100%;\r\n}\r\n\r\n.menu-button[_ngcontent-%COMP%] {\r\n  transition: 300ms ease-in-out;\r\n  transform: rotate(0deg);\r\n}\r\n\r\n.menu-button.rotated[_ngcontent-%COMP%] {\r\n  transform: rotate(180deg);\r\n}\r\n\r\n.submenu[_ngcontent-%COMP%] {\r\n  overflow-y: hidden;\r\n  transition: transform 300ms ease;\r\n  transform: scaleY(0);\r\n  transform-origin: top;\r\n  padding-left: 30px;\r\n}\r\n\r\n.submenu.expanded[_ngcontent-%COMP%] {\r\n  transform: scaleY(1);\r\n}\r\n\r\n@-webkit-keyframes orbit {\r\n  from {transform:rotate(0deg) }\r\n  to { transform:rotate(360deg) }\r\n}\r\n\r\n@-webkit-keyframes rotate-planet {\r\n  from {\r\n    transform: rotate(0);\r\n  }\r\n  to {\r\n    transform: rotate(360deg);\r\n  }\r\n}\r\n\r\n@keyframes rotate-planet {\r\n  from {\r\n    transform: rotate(0);\r\n  }\r\n  to {\r\n    transform: rotate(360deg);\r\n  }\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSx1QkFBdUI7QUFDekI7O0FBRUE7RUFDRSxZQUFZO0VBQ1osb0NBQW9DO0FBQ3RDOztBQUVBO0dBQ0cseUJBQWlCO01BQWpCLHNCQUFpQjtPQUFqQixxQkFBaUI7V0FBakIsaUJBQWlCO0FBQ3BCOztBQUNBO0VBQ0UsV0FBVztBQUNiOztBQUNBO0VBQ0UsNkJBQTZCO0VBQzdCLHVCQUF1QjtBQUN6Qjs7QUFDQTtFQUNFLHlCQUF5QjtBQUMzQjs7QUFDQTtFQUNFLGtCQUFrQjtFQUNsQixnQ0FBZ0M7RUFDaEMsb0JBQW9CO0VBQ3BCLHFCQUFxQjtFQUNyQixrQkFBa0I7QUFDcEI7O0FBQ0E7RUFDRSxvQkFBb0I7QUFDdEI7O0FBRUE7RUFDRSxNQUFNLHVCQUF1QjtFQUM3QixLQUFLLHlCQUF5QjtBQUNoQzs7QUFFQTtFQUNFO0lBQ0Usb0JBQW9CO0VBQ3RCO0VBQ0E7SUFDRSx5QkFBeUI7RUFDM0I7QUFDRjs7QUFQQTtFQUNFO0lBQ0Usb0JBQW9CO0VBQ3RCO0VBQ0E7SUFDRSx5QkFBeUI7RUFDM0I7QUFDRiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm1hdC1idXR0b24tYmFzZXtcclxuICBtYXJnaW46IDhweCA4cHggOHB4IDhweDtcclxufVxyXG5cclxuLmV4YW1wbGUtY29udGFpbmVyIHtcclxuICBoZWlnaHQ6IDg4dmg7XHJcbiAgYm9yZGVyOiAxcHggc29saWQgcmdiYSgwLCAwLCAwLCAwLjUpO1xyXG59XHJcblxyXG4uZXhhbXBsZS1zaWRlbmF2IHtcclxuICAgdXNlci1zZWxlY3Q6IG5vbmU7XHJcbn1cclxuLmZ1bGwtd2lkdGgge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG59XHJcbi5tZW51LWJ1dHRvbiB7XHJcbiAgdHJhbnNpdGlvbjogMzAwbXMgZWFzZS1pbi1vdXQ7XHJcbiAgdHJhbnNmb3JtOiByb3RhdGUoMGRlZyk7XHJcbn1cclxuLm1lbnUtYnV0dG9uLnJvdGF0ZWQge1xyXG4gIHRyYW5zZm9ybTogcm90YXRlKDE4MGRlZyk7XHJcbn1cclxuLnN1Ym1lbnUge1xyXG4gIG92ZXJmbG93LXk6IGhpZGRlbjtcclxuICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMzAwbXMgZWFzZTtcclxuICB0cmFuc2Zvcm06IHNjYWxlWSgwKTtcclxuICB0cmFuc2Zvcm0tb3JpZ2luOiB0b3A7XHJcbiAgcGFkZGluZy1sZWZ0OiAzMHB4O1xyXG59XHJcbi5zdWJtZW51LmV4cGFuZGVkIHtcclxuICB0cmFuc2Zvcm06IHNjYWxlWSgxKTtcclxufVxyXG5cclxuQC13ZWJraXQta2V5ZnJhbWVzIG9yYml0IHtcclxuICBmcm9tIHt0cmFuc2Zvcm06cm90YXRlKDBkZWcpIH1cclxuICB0byB7IHRyYW5zZm9ybTpyb3RhdGUoMzYwZGVnKSB9XHJcbn1cclxuXHJcbkBrZXlmcmFtZXMgcm90YXRlLXBsYW5ldCB7XHJcbiAgZnJvbSB7XHJcbiAgICB0cmFuc2Zvcm06IHJvdGF0ZSgwKTtcclxuICB9XHJcbiAgdG8ge1xyXG4gICAgdHJhbnNmb3JtOiByb3RhdGUoMzYwZGVnKTtcclxuICB9XHJcbn1cclxuIl19 */"]
+        directives: [_angular_material_toolbar__WEBPACK_IMPORTED_MODULE_3__["MatToolbar"], _angular_material_button__WEBPACK_IMPORTED_MODULE_4__["MatButton"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_5__["MatIcon"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_6__["MatSidenavContainer"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_6__["MatSidenav"], _angular_material_list__WEBPACK_IMPORTED_MODULE_7__["MatNavList"], _angular_material_list__WEBPACK_IMPORTED_MODULE_7__["MatListItem"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgIf"], _angular_material_list__WEBPACK_IMPORTED_MODULE_7__["MatListIconCssMatStyler"], _celestial_orbit_celestial_orbit_component__WEBPACK_IMPORTED_MODULE_9__["CelestialOrbitComponent"], _directives_PlanetDirective_directive__WEBPACK_IMPORTED_MODULE_10__["PlanetDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgClass"], _orbit_form_orbit_form_component__WEBPACK_IMPORTED_MODULE_11__["OrbitFormComponent"]],
+        styles: [".mat-button-base[_ngcontent-%COMP%]{\r\n  margin: 8px 8px 8px 8px;\r\n}\r\n\r\n.example-container[_ngcontent-%COMP%] {\r\n  height: 88vh;\r\n  border: 1px solid rgba(0, 0, 0, 0.5);\r\n}\r\n\r\n.example-sidenav[_ngcontent-%COMP%] {\r\n   -webkit-user-select: none;\r\n      -moz-user-select: none;\r\n       -ms-user-select: none;\r\n           user-select: none;\r\n}\r\n\r\n.full-width[_ngcontent-%COMP%] {\r\n  width: 100%;\r\n}\r\n\r\n.menu-button[_ngcontent-%COMP%] {\r\n  transition: 300ms ease-in-out;\r\n  transform: rotate(0deg);\r\n}\r\n\r\n.menu-button.rotated[_ngcontent-%COMP%] {\r\n  transform: rotate(180deg);\r\n}\r\n\r\n.submenu[_ngcontent-%COMP%] {\r\n  overflow-y: hidden;\r\n  transition: transform 300ms ease;\r\n  transform: scaleY(0);\r\n  transform-origin: top;\r\n  padding-left: 30px;\r\n}\r\n\r\n.submenu.expanded[_ngcontent-%COMP%] {\r\n  transform: scaleY(1);\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSx1QkFBdUI7QUFDekI7O0FBRUE7RUFDRSxZQUFZO0VBQ1osb0NBQW9DO0FBQ3RDOztBQUVBO0dBQ0cseUJBQWlCO01BQWpCLHNCQUFpQjtPQUFqQixxQkFBaUI7V0FBakIsaUJBQWlCO0FBQ3BCOztBQUNBO0VBQ0UsV0FBVztBQUNiOztBQUNBO0VBQ0UsNkJBQTZCO0VBQzdCLHVCQUF1QjtBQUN6Qjs7QUFDQTtFQUNFLHlCQUF5QjtBQUMzQjs7QUFDQTtFQUNFLGtCQUFrQjtFQUNsQixnQ0FBZ0M7RUFDaEMsb0JBQW9CO0VBQ3BCLHFCQUFxQjtFQUNyQixrQkFBa0I7QUFDcEI7O0FBQ0E7RUFDRSxvQkFBb0I7QUFDdEIiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5tYXQtYnV0dG9uLWJhc2V7XHJcbiAgbWFyZ2luOiA4cHggOHB4IDhweCA4cHg7XHJcbn1cclxuXHJcbi5leGFtcGxlLWNvbnRhaW5lciB7XHJcbiAgaGVpZ2h0OiA4OHZoO1xyXG4gIGJvcmRlcjogMXB4IHNvbGlkIHJnYmEoMCwgMCwgMCwgMC41KTtcclxufVxyXG5cclxuLmV4YW1wbGUtc2lkZW5hdiB7XHJcbiAgIHVzZXItc2VsZWN0OiBub25lO1xyXG59XHJcbi5mdWxsLXdpZHRoIHtcclxuICB3aWR0aDogMTAwJTtcclxufVxyXG4ubWVudS1idXR0b24ge1xyXG4gIHRyYW5zaXRpb246IDMwMG1zIGVhc2UtaW4tb3V0O1xyXG4gIHRyYW5zZm9ybTogcm90YXRlKDBkZWcpO1xyXG59XHJcbi5tZW51LWJ1dHRvbi5yb3RhdGVkIHtcclxuICB0cmFuc2Zvcm06IHJvdGF0ZSgxODBkZWcpO1xyXG59XHJcbi5zdWJtZW51IHtcclxuICBvdmVyZmxvdy15OiBoaWRkZW47XHJcbiAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDMwMG1zIGVhc2U7XHJcbiAgdHJhbnNmb3JtOiBzY2FsZVkoMCk7XHJcbiAgdHJhbnNmb3JtLW9yaWdpbjogdG9wO1xyXG4gIHBhZGRpbmctbGVmdDogMzBweDtcclxufVxyXG4uc3VibWVudS5leHBhbmRlZCB7XHJcbiAgdHJhbnNmb3JtOiBzY2FsZVkoMSk7XHJcbn1cclxuIl19 */"]
       });
       /*@__PURE__*/
 
@@ -598,8 +511,6 @@
         }], function () {
           return [{
             type: _services_planet_service__WEBPACK_IMPORTED_MODULE_2__["PlanetService"]
-          }, {
-            type: _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"]
           }];
         }, {
           sidenav: [{
@@ -721,6 +632,18 @@
       var _celestial_orbit_celestial_orbit_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
       /*! ./celestial-orbit/celestial-orbit.component */
       "./src/app/celestial-orbit/celestial-orbit.component.ts");
+      /* harmony import */
+
+
+      var _side_nav_side_nav_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
+      /*! ./side-nav/side-nav.component */
+      "./src/app/side-nav/side-nav.component.ts");
+      /* harmony import */
+
+
+      var _orbit_form_orbit_form_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
+      /*! ./orbit-form/orbit-form.component */
+      "./src/app/orbit-form/orbit-form.component.ts");
 
       var AppModule = function AppModule() {
         _classCallCheck(this, AppModule);
@@ -740,7 +663,7 @@
 
       (function () {
         (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, {
-          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_10__["AppComponent"], _directives_PlanetDirective_directive__WEBPACK_IMPORTED_MODULE_12__["PlanetDirective"], _directives_AnimationDirective_directive__WEBPACK_IMPORTED_MODULE_13__["PlanetAnimationDirective"], _celestial_orbit_celestial_orbit_component__WEBPACK_IMPORTED_MODULE_14__["CelestialOrbitComponent"]],
+          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_10__["AppComponent"], _directives_PlanetDirective_directive__WEBPACK_IMPORTED_MODULE_12__["PlanetDirective"], _directives_AnimationDirective_directive__WEBPACK_IMPORTED_MODULE_13__["PlanetAnimationDirective"], _celestial_orbit_celestial_orbit_component__WEBPACK_IMPORTED_MODULE_14__["CelestialOrbitComponent"], _side_nav_side_nav_component__WEBPACK_IMPORTED_MODULE_15__["SideNavComponent"], _orbit_form_orbit_form_component__WEBPACK_IMPORTED_MODULE_16__["OrbitFormComponent"]],
           imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_11__["BrowserAnimationsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_7__["HttpClientModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_9__["AppRoutingModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_2__["MatToolbarModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_4__["MatSidenavModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_5__["MatListModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_6__["MatButtonModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_3__["MatIconModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"]]
         });
       })();
@@ -751,7 +674,7 @@
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
           type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
           args: [{
-            declarations: [_app_component__WEBPACK_IMPORTED_MODULE_10__["AppComponent"], _directives_PlanetDirective_directive__WEBPACK_IMPORTED_MODULE_12__["PlanetDirective"], _directives_AnimationDirective_directive__WEBPACK_IMPORTED_MODULE_13__["PlanetAnimationDirective"], _celestial_orbit_celestial_orbit_component__WEBPACK_IMPORTED_MODULE_14__["CelestialOrbitComponent"]],
+            declarations: [_app_component__WEBPACK_IMPORTED_MODULE_10__["AppComponent"], _directives_PlanetDirective_directive__WEBPACK_IMPORTED_MODULE_12__["PlanetDirective"], _directives_AnimationDirective_directive__WEBPACK_IMPORTED_MODULE_13__["PlanetAnimationDirective"], _celestial_orbit_celestial_orbit_component__WEBPACK_IMPORTED_MODULE_14__["CelestialOrbitComponent"], _side_nav_side_nav_component__WEBPACK_IMPORTED_MODULE_15__["SideNavComponent"], _orbit_form_orbit_form_component__WEBPACK_IMPORTED_MODULE_16__["OrbitFormComponent"]],
             imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_11__["BrowserAnimationsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_7__["HttpClientModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_9__["AppRoutingModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_2__["MatToolbarModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_4__["MatSidenavModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_5__["MatListModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_6__["MatButtonModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_3__["MatIconModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"]],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_10__["AppComponent"]]
@@ -816,7 +739,7 @@
 
       CelestialOrbitComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
         type: CelestialOrbitComponent,
-        selectors: [["app-celestial-orbit"]],
+        selectors: [["celestial-orbit-animation"]],
         inputs: {
           animatePlanet: "animatePlanet",
           orbitalSpeed: "orbitalSpeed",
@@ -862,7 +785,7 @@
           }
         },
         directives: [_angular_material_sidenav__WEBPACK_IMPORTED_MODULE_1__["MatSidenavContent"], _directives_AnimationDirective_directive__WEBPACK_IMPORTED_MODULE_2__["PlanetAnimationDirective"], _directives_PlanetDirective_directive__WEBPACK_IMPORTED_MODULE_3__["PlanetDirective"]],
-        styles: [".sun[_ngcontent-%COMP%]{\r\n  display:inline-block;\r\n  position: absolute;\r\n  background-color: yellow;\r\n  height: 150px;\r\n  width: 150px;\r\n  border-radius: 50%;\r\n  border: 10px solid orange;\r\n}\r\n\r\n.orbiter[_ngcontent-%COMP%]{\r\n  border-radius: 50%;\r\n  position:absolute;\r\n}\r\n\r\n.celestialOrbitSideContent[_ngcontent-%COMP%] {\r\n  display: flex;\r\n  height: 100%;\r\n  align-items: center;\r\n  justify-content: center;\r\n}\r\n\r\nmat-sidenav-content[_ngcontent-%COMP%] {\r\n  margin-left: 0 !important;\r\n  flex: 1 1 auto;\r\n}\r\n\r\nmat-sidenav[_ngcontent-%COMP%] {\r\n  flex: 0 1 auto;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY2VsZXN0aWFsLW9yYml0L2NlbGVzdGlhbC1vcmJpdC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usb0JBQW9CO0VBQ3BCLGtCQUFrQjtFQUNsQix3QkFBd0I7RUFDeEIsYUFBYTtFQUNiLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLGFBQWE7RUFDYixZQUFZO0VBQ1osbUJBQW1CO0VBQ25CLHVCQUF1QjtBQUN6Qjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsY0FBYztBQUNoQiIsImZpbGUiOiJzcmMvYXBwL2NlbGVzdGlhbC1vcmJpdC9jZWxlc3RpYWwtb3JiaXQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5zdW57XHJcbiAgZGlzcGxheTppbmxpbmUtYmxvY2s7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHllbGxvdztcclxuICBoZWlnaHQ6IDE1MHB4O1xyXG4gIHdpZHRoOiAxNTBweDtcclxuICBib3JkZXItcmFkaXVzOiA1MCU7XHJcbiAgYm9yZGVyOiAxMHB4IHNvbGlkIG9yYW5nZTtcclxufVxyXG5cclxuLm9yYml0ZXJ7XHJcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xyXG4gIHBvc2l0aW9uOmFic29sdXRlO1xyXG59XHJcblxyXG4uY2VsZXN0aWFsT3JiaXRTaWRlQ29udGVudCB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBoZWlnaHQ6IDEwMCU7XHJcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxufVxyXG5cclxubWF0LXNpZGVuYXYtY29udGVudCB7XHJcbiAgbWFyZ2luLWxlZnQ6IDAgIWltcG9ydGFudDtcclxuICBmbGV4OiAxIDEgYXV0bztcclxufVxyXG5cclxubWF0LXNpZGVuYXYge1xyXG4gIGZsZXg6IDAgMSBhdXRvO1xyXG59XHJcbiJdfQ== */"]
+        styles: [".sun[_ngcontent-%COMP%]{\r\n  display:inline-block;\r\n  position: absolute;\r\n  background-color: yellow;\r\n  height: 150px;\r\n  width: 150px;\r\n  border-radius: 50%;\r\n  border: 10px solid orange;\r\n}\r\n\r\n.orbiter[_ngcontent-%COMP%]{\r\n  border-radius: 50%;\r\n  position:absolute;\r\n}\r\n\r\n.celestialOrbitSideContent[_ngcontent-%COMP%] {\r\n  display: flex;\r\n  height: 100%;\r\n  align-items: center;\r\n  justify-content: center;\r\n}\r\n\r\nmat-sidenav-content[_ngcontent-%COMP%] {\r\n  margin-left: 0 !important;\r\n  flex: 1 1 auto;\r\n}\r\n\r\nmat-sidenav[_ngcontent-%COMP%] {\r\n  flex: 0 1 auto;\r\n}\r\n\r\n@-webkit-keyframes orbit {\r\n  from {transform:rotate(0deg) }\r\n  to { transform:rotate(360deg) }\r\n}\r\n\r\n@-webkit-keyframes rotate-planet {\r\n  from {\r\n    transform: rotate(0);\r\n  }\r\n  to {\r\n    transform: rotate(360deg);\r\n  }\r\n}\r\n\r\n@keyframes rotate-planet {\r\n  from {\r\n    transform: rotate(0);\r\n  }\r\n  to {\r\n    transform: rotate(360deg);\r\n  }\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY2VsZXN0aWFsLW9yYml0L2NlbGVzdGlhbC1vcmJpdC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usb0JBQW9CO0VBQ3BCLGtCQUFrQjtFQUNsQix3QkFBd0I7RUFDeEIsYUFBYTtFQUNiLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLGFBQWE7RUFDYixZQUFZO0VBQ1osbUJBQW1CO0VBQ25CLHVCQUF1QjtBQUN6Qjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLE1BQU0sdUJBQXVCO0VBQzdCLEtBQUsseUJBQXlCO0FBQ2hDOztBQUVBO0VBQ0U7SUFDRSxvQkFBb0I7RUFDdEI7RUFDQTtJQUNFLHlCQUF5QjtFQUMzQjtBQUNGOztBQVBBO0VBQ0U7SUFDRSxvQkFBb0I7RUFDdEI7RUFDQTtJQUNFLHlCQUF5QjtFQUMzQjtBQUNGIiwiZmlsZSI6InNyYy9hcHAvY2VsZXN0aWFsLW9yYml0L2NlbGVzdGlhbC1vcmJpdC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnN1bntcclxuICBkaXNwbGF5OmlubGluZS1ibG9jaztcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogeWVsbG93O1xyXG4gIGhlaWdodDogMTUwcHg7XHJcbiAgd2lkdGg6IDE1MHB4O1xyXG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcclxuICBib3JkZXI6IDEwcHggc29saWQgb3JhbmdlO1xyXG59XHJcblxyXG4ub3JiaXRlcntcclxuICBib3JkZXItcmFkaXVzOiA1MCU7XHJcbiAgcG9zaXRpb246YWJzb2x1dGU7XHJcbn1cclxuXHJcbi5jZWxlc3RpYWxPcmJpdFNpZGVDb250ZW50IHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGhlaWdodDogMTAwJTtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG59XHJcblxyXG5tYXQtc2lkZW5hdi1jb250ZW50IHtcclxuICBtYXJnaW4tbGVmdDogMCAhaW1wb3J0YW50O1xyXG4gIGZsZXg6IDEgMSBhdXRvO1xyXG59XHJcblxyXG5tYXQtc2lkZW5hdiB7XHJcbiAgZmxleDogMCAxIGF1dG87XHJcbn1cclxuXHJcbkAtd2Via2l0LWtleWZyYW1lcyBvcmJpdCB7XHJcbiAgZnJvbSB7dHJhbnNmb3JtOnJvdGF0ZSgwZGVnKSB9XHJcbiAgdG8geyB0cmFuc2Zvcm06cm90YXRlKDM2MGRlZykgfVxyXG59XHJcblxyXG5Aa2V5ZnJhbWVzIHJvdGF0ZS1wbGFuZXQge1xyXG4gIGZyb20ge1xyXG4gICAgdHJhbnNmb3JtOiByb3RhdGUoMCk7XHJcbiAgfVxyXG4gIHRvIHtcclxuICAgIHRyYW5zZm9ybTogcm90YXRlKDM2MGRlZyk7XHJcbiAgfVxyXG59XHJcbiJdfQ== */"]
       });
       /*@__PURE__*/
 
@@ -870,7 +793,7 @@
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](CelestialOrbitComponent, [{
           type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
           args: [{
-            selector: 'app-celestial-orbit',
+            selector: 'celestial-orbit-animation',
             templateUrl: './celestial-orbit.component.html',
             styleUrls: ['./celestial-orbit.component.css']
           }]
@@ -1127,6 +1050,237 @@
     },
 
     /***/
+    "./src/app/domain/celestial-orbit.model.ts":
+    /*!*************************************************!*\
+      !*** ./src/app/domain/celestial-orbit.model.ts ***!
+      \*************************************************/
+
+    /*! exports provided: CelestialOrbit */
+
+    /***/
+    function srcAppDomainCelestialOrbitModelTs(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony export (binding) */
+
+
+      __webpack_require__.d(__webpack_exports__, "CelestialOrbit", function () {
+        return CelestialOrbit;
+      });
+
+      var CelestialOrbit = function CelestialOrbit() {
+        _classCallCheck(this, CelestialOrbit);
+
+        this.orbitalSpeed = 1;
+        this.rotationalSpeed = 1;
+        this.planet = {};
+        this.animatePlanet = true;
+        this.submitted = false;
+      };
+      /***/
+
+    },
+
+    /***/
+    "./src/app/orbit-form/orbit-form.component.ts":
+    /*!****************************************************!*\
+      !*** ./src/app/orbit-form/orbit-form.component.ts ***!
+      \****************************************************/
+
+    /*! exports provided: OrbitFormComponent */
+
+    /***/
+    function srcAppOrbitFormOrbitFormComponentTs(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony export (binding) */
+
+
+      __webpack_require__.d(__webpack_exports__, "OrbitFormComponent", function () {
+        return OrbitFormComponent;
+      });
+      /* harmony import */
+
+
+      var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! @angular/core */
+      "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+      /* harmony import */
+
+
+      var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+      /*! @angular/forms */
+      "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
+      /* harmony import */
+
+
+      var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      /*! @angular/common */
+      "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+
+      function OrbitFormComponent_span_5_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "span", 6);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Must be positive ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        }
+      }
+
+      function OrbitFormComponent_span_10_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "span", 6);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Must be positive ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        }
+      }
+
+      var OrbitFormComponent = /*#__PURE__*/function () {
+        function OrbitFormComponent(fb) {
+          _classCallCheck(this, OrbitFormComponent);
+
+          this.fb = fb;
+        }
+
+        _createClass(OrbitFormComponent, [{
+          key: "ngOnInit",
+          value: function ngOnInit() {
+            this.celestialOrbit.orbitForm = this.fb.group({
+              orbitalSpeed: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].min(0)],
+              rotationalSpeed: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].min(0)]
+            }, {});
+          }
+        }, {
+          key: "onSubmit",
+          value: function onSubmit() {
+            this.celestialOrbit.submitted = true;
+
+            if (this.celestialOrbit.orbitForm.valid) {
+              if (this.celestialOrbit.orbitForm.value.orbitalSpeed >= 0) {
+                this.celestialOrbit.orbitalSpeed = this.celestialOrbit.orbitForm.value.orbitalSpeed;
+              }
+
+              if (this.celestialOrbit.orbitForm.value.rotationalSpeed >= 0) {
+                this.celestialOrbit.rotationalSpeed = this.celestialOrbit.orbitForm.value.rotationalSpeed;
+              }
+            }
+          }
+        }]);
+
+        return OrbitFormComponent;
+      }();
+
+      OrbitFormComponent.ɵfac = function OrbitFormComponent_Factory(t) {
+        return new (t || OrbitFormComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"]));
+      };
+
+      OrbitFormComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+        type: OrbitFormComponent,
+        selectors: [["orbit-form"]],
+        inputs: {
+          celestialOrbit: "celestialOrbit"
+        },
+        decls: 13,
+        vars: 5,
+        consts: [[1, "form", 3, "formGroup", "ngSubmit"], [1, "form-group"], ["type", "number", "name", "orbitalSpeed", "min", "0", "formControlName", "orbitalSpeed", 1, "form-control", 3, "placeholder"], ["class", "text-danger", 4, "ngIf"], ["type", "number", "name", "rotationalSpeed", "min", "0", "formControlName", "rotationalSpeed", 1, "form-control", 3, "placeholder"], ["type", "submit", "name", "Apply"], [1, "text-danger"]],
+        template: function OrbitFormComponent_Template(rf, ctx) {
+          if (rf & 1) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "form", 0);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngSubmit", function OrbitFormComponent_Template_form_ngSubmit_0_listener() {
+              return ctx.onSubmit();
+            });
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "label");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Orbital Period");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "input", 2);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, OrbitFormComponent_span_5_Template, 2, 0, "span", 3);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 1);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "label");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Rotational Period");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "input", 4);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](10, OrbitFormComponent_span_10_Template, 2, 0, "span", 3);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "div", 1);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](12, "input", 5);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          }
+
+          if (rf & 2) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("formGroup", ctx.celestialOrbit.orbitForm);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("placeholder", ctx.celestialOrbit.orbitalSpeed);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", (ctx.celestialOrbit.orbitForm.controls.orbitalSpeed.touched || ctx.celestialOrbit.submitted) && (ctx.celestialOrbit.orbitForm.controls.orbitalSpeed.errors == null ? null : ctx.celestialOrbit.orbitForm.controls.orbitalSpeed.errors.min));
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate1"]("placeholder", " ", ctx.celestialOrbit.rotationalSpeed, "");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", (ctx.celestialOrbit.orbitForm.controls.rotationalSpeed.touched || ctx.celestialOrbit.submitted) && (ctx.celestialOrbit.orbitForm.controls.rotationalSpeed.errors == null ? null : ctx.celestialOrbit.orbitForm.controls.rotationalSpeed.errors.min));
+          }
+        },
+        directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroupDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NumberValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControlName"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"]],
+        styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL29yYml0LWZvcm0vb3JiaXQtZm9ybS5jb21wb25lbnQuY3NzIn0= */"]
+      });
+      /*@__PURE__*/
+
+      (function () {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](OrbitFormComponent, [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+          args: [{
+            selector: 'orbit-form',
+            templateUrl: './orbit-form.component.html',
+            styleUrls: ['./orbit-form.component.css']
+          }]
+        }], function () {
+          return [{
+            type: _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"]
+          }];
+        }, {
+          celestialOrbit: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+          }]
+        });
+      })();
+      /***/
+
+    },
+
+    /***/
     "./src/app/services/planet.service.ts":
     /*!********************************************!*\
       !*** ./src/app/services/planet.service.ts ***!
@@ -1197,6 +1351,83 @@
           return [{
             type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]
           }];
+        }, null);
+      })();
+      /***/
+
+    },
+
+    /***/
+    "./src/app/side-nav/side-nav.component.ts":
+    /*!************************************************!*\
+      !*** ./src/app/side-nav/side-nav.component.ts ***!
+      \************************************************/
+
+    /*! exports provided: SideNavComponent */
+
+    /***/
+    function srcAppSideNavSideNavComponentTs(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony export (binding) */
+
+
+      __webpack_require__.d(__webpack_exports__, "SideNavComponent", function () {
+        return SideNavComponent;
+      });
+      /* harmony import */
+
+
+      var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! @angular/core */
+      "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+
+      var SideNavComponent = /*#__PURE__*/function () {
+        function SideNavComponent() {
+          _classCallCheck(this, SideNavComponent);
+        }
+
+        _createClass(SideNavComponent, [{
+          key: "ngOnInit",
+          value: function ngOnInit() {}
+        }]);
+
+        return SideNavComponent;
+      }();
+
+      SideNavComponent.ɵfac = function SideNavComponent_Factory(t) {
+        return new (t || SideNavComponent)();
+      };
+
+      SideNavComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+        type: SideNavComponent,
+        selectors: [["app-side-nav"]],
+        decls: 2,
+        vars: 0,
+        template: function SideNavComponent_Template(rf, ctx) {
+          if (rf & 1) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "side-nav works!");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          }
+        },
+        styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3NpZGUtbmF2L3NpZGUtbmF2LmNvbXBvbmVudC5jc3MifQ== */"]
+      });
+      /*@__PURE__*/
+
+      (function () {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](SideNavComponent, [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+          args: [{
+            selector: 'app-side-nav',
+            templateUrl: './side-nav.component.html',
+            styleUrls: ['./side-nav.component.css']
+          }]
+        }], function () {
+          return [];
         }, null);
       })();
       /***/

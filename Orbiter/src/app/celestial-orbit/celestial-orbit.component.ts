@@ -1,8 +1,8 @@
-import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
+import { Component, Input, Output, EventEmitter} from '@angular/core';
 import { PlanetService } from '../services/planet.service';
 
 @Component({
-  selector: 'app-celestial-orbit',
+  selector: 'celestial-orbit-animation',
   templateUrl: './celestial-orbit.component.html',
   styleUrls: ['./celestial-orbit.component.css']
 })
